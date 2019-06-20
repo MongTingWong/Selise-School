@@ -13,6 +13,7 @@ for (var st = 0; st < buttonlist.length; st++) {
 
 
 function clickFunction() {
+    this.style.opacity = 0.6;
     this.disabled = true;
     startcount = parseInt(localStorage.getItem(localStorage.key('0'))) + 1;
 

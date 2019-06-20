@@ -67,6 +67,8 @@ nav {
 
 img {
     border-radius: 5px 5px 0 0;
+    height: 20%;
+    overflow: hidden;
 }
 
 .containerr {
