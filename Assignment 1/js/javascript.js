@@ -2,6 +2,7 @@ var buttonlist = document.getElementsByClassName('button button3');
 var cart = document.getElementById("cart");
 var startcount = 0;
 localStorage.clear();
+localStorage.setItem('1', startcount);
 
 for (var st = 0; st < buttonlist.length; st++) {
 
@@ -13,7 +14,7 @@ for (var st = 0; st < buttonlist.length; st++) {
 
 function clickFunction() {
     this.disabled = true;
-    startcount++;
+    startcount = parseInt(localStorage.getItem(localStorage.key('0'))) + 1;
 
     localStorage.setItem('1', startcount);
 
