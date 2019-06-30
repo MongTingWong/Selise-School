@@ -3,6 +3,9 @@ var cart = document.getElementById("cart");
 var startcount = 0;
 localStorage.clear();
 localStorage.setItem('1', startcount);
+for (var st = 0; st < noOfProduct; st++) {
+    document.getElementById("product_list").innerHTML += createPerson(st);
+}
 
 for (var st = 0; st < buttonlist.length; st++) {
 
